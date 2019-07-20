@@ -1,0 +1,72 @@
+body .intro_social,body .intro_text,body .intro_name {
+    text-align: center
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: #19101F;
+    font-family: 'traffolight';
+}
+
+body .intro {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    width: 600px;
+}
+
+body .intro_name p {
+    font-size: 22px;
+    transition: all .4s
+}
+
+body .intro_name p:hover {
+    font-size: 26px;
+}
+
+body .intro_name p:hover span {
+    font-size: 28px;
+    color: #E4236D;
+    transition: all .4s    
+}
+
+
+body .intro_text, .intro_name {
+    color: #fff;
+    margin: 90px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 6px
+}
+
+body .intro_text .pink {
+    color: #E4236D
+}
+
+body .intro_social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    transition: all .4s
+}
+
+body .intro_social a:hover {
+    font-size: 25px;
+    color: #E4236D;
+    opacity: 1
+}
+
+@font-face {
+    font-family: 'traffolight';
+    src: url('font/traffolight-webfont.woff2') format('woff2'),
+         url('font/traffolight-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
