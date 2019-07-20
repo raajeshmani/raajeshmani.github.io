@@ -28,10 +28,11 @@ body .intro_name p {
 
 body .intro_name p:hover {
     font-size: 26px;
+    cursor: none;
 }
 
 body .intro_name p:hover span {
-    font-size: 28px;
+    font-size: 26px;
     color: #E4236D;
     transition: all .4s    
 }
