@@ -78,10 +78,34 @@ body .intro_social a:hover {
     opacity: 1
 }
 
-
-
 body .intro_social a img:hover {
     transform: scale(2);
+}
+
+@media (max-width: 600px) {
+    body .intro {
+        width:100%
+    }
+
+    body .intro_name {
+        font-size: 16px;
+        letter-spacing: 3px
+    }
+
+    body .intro_social a{
+        font-size: 13px;
+    }
+
+    body .intro_social a > img{
+        width: 20px;
+        height: 20px;
+        bottom: -1px;
+    }
+
+    body .intro_text {
+        font-size: 13px;
+        letter-spacing: 3px
+    }
 }
 
 @font-face {
