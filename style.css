@@ -56,6 +56,14 @@ body .intro_social {
     right: 40px;
 }
 
+body .intro_social a img {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: -5px;
+    transition: transform .4s ease-in;
+}
+
 body .intro_social a {
     color: #fff;
     text-decoration: none;
@@ -70,13 +78,7 @@ body .intro_social a:hover {
     opacity: 1
 }
 
-body .intro_social a img {
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    bottom: -5px;
-    transition: transform .4s ease-in;
-}
+
 
 body .intro_social a img:hover {
     transform: scale(2);
