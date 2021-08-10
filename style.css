@@ -2,6 +2,10 @@ body .intro_social,body .intro_text,body .intro_name {
     text-align: center
 }
 
+html, body {
+    background: #19101F;
+}
+
 * {
     box-sizing: border-box
 }
@@ -9,11 +13,31 @@ body .intro_social,body .intro_text,body .intro_name {
 body {
     background: #19101F;
     font-family: 'traffolight';
+    height: 1000px;
+}
+
+body .initials {
+    font-size: 34px;
+    position: absolute;
+    top: 10%;
+    width: 100px;
+    left: 10%;
+    align-items: center;
+    display: flex;
+}
+
+body a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body .initials .red-dot {
+    color: #E4236D;
 }
 
 body .intro {
     position: absolute;
-    top: 50%;
+    top: 38%;
     left: 0;
     right: 0;
     margin: auto;
@@ -34,7 +58,7 @@ body .intro_name p:hover {
 body .intro_name p:hover span {
     font-size: 26px;
     color: #E4236D;
-    transition: all .4s    
+    transition: all .4s
 }
 
 
@@ -50,6 +74,7 @@ body .intro_text .pink {
     color: #E4236D
 }
 
+ /* TODO Add row column to arrange things */
 body .intro_social {
     position: absolute;
     left: 0;
