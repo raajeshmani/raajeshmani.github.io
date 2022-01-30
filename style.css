@@ -1,141 +1,225 @@
-  .intro_social,
-  .intro_text,
-  .intro_name {
-      text-align: center
-  }
-  
-  html,
-  body {
-      background: #19101F;
-  }
-  
-  * {
-      box-sizing: border-box
-  }
-  
-  body {
-      background: #19101F;
-      font-family: 'traffolight';
-      height: 1000px;
-  }
-  
-  .initials {
-      font-size: 34px;
-      position: absolute;
-      top: 10%;
-      width: 100px;
-      left: 10%;
-      align-items: center;
-      display: flex;
-  }
-  
-  a {
-      color: #fff;
-      text-decoration: none;
-  }
-  
-  .initials .red-dot {
-      color: #E4236D;
-  }
-  
-  .intro {
-      position: absolute;
-      top: 38%;
-      left: 0;
-      right: 0;
-      margin: auto;
-      transform: translateY(-50%);
-      width: 600px;
-  }
-  
-  .intro_name p {
-      font-size: 22px;
-      transition: all .4s
-  }
-  
-  .intro_name p:hover {
-      font-size: 26px;
-      cursor: none;
-  }
-  
-  .intro_name p:hover span {
-      font-size: 26px;
-      color: #E4236D;
-      transition: all .4s
-  }
-  
-  .intro_text,
-  .intro_name {
-      color: #fff;
-      margin: 90px 0;
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 6px
-  }
-  
-  .intro_text .pink {
-      color: #E4236D
-  }
-  /* TODO Add row column to arrange things */
-  
-  .intro_social {
-      position: absolute;
-      left: 0;
-      right: 40px;
-  }
-  
-  .intro_social a img {
-      width: 35px;
-      height: 35px;
-      position: absolute;
-      bottom: -5px;
-      transition: transform .4s ease-in;
-  }
-  
-  .intro_social a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 20px;
-      padding: 15px;
-      transition: all .4s
-  }
-  
-  .intro_social a:hover {
-      font-size: 25px;
-      color: #E4236D;
-      opacity: 1
-  }
-  
-  .intro_social a img:hover {
-      transform: scale(2);
-  }
-  
-  @media (max-width: 600px) {
-      .intro {
-          width: 100%
-      }
-      .intro_name {
-          font-size: 16px;
-          letter-spacing: 3px
-      }
-      .intro_social a {
-          font-size: 13px;
-      }
-      .intro_social a>img {
-          width: 20px;
-          height: 20px;
-          bottom: -1px;
-      }
-      .intro_text {
-          font-size: 13px;
-          letter-spacing: 3px
-      }
-  }
-  
-  @font-face {
-      font-family: 'traffolight';
-      src: url('font/traffolight-webfont.woff2') format('woff2'), url('font/traffolight-webfont.woff') format('woff');
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap
-  }
+html,
+body {
+    background: #19101F;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: #19101F;
+    font-family: 'traffolight', 'sans-serif';
+    /* height: 1000px; */
+}
+
+.intro_social,
+.intro_text,
+.intro_name {
+    text-align: center
+}
+
+.initials {
+    font-size: 34px;
+    position: absolute;
+    top: 10%;
+    width: 100px;
+    left: 10%;
+    align-items: center;
+    display: flex;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.red {
+    color: #E4236D
+}
+
+.intro {
+    position: absolute;
+    top: 38%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    width: 600px;
+}
+
+.experience {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-10%);
+    width: 900px;
+}
+
+.intro_text,
+.intro_name {
+    color: #fff;
+    margin: 10% 4%;
+    padding: 2%;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 8px
+}
+
+.experience_name {
+    margin-bottom: 0;
+    padding: 2% 5% 2% 5%;
+}
+
+.intro_name p {
+    font-size: 22px;
+    transition: transform .4s ease-in
+}
+
+.intro_name p:hover {
+    transform: scale(1.1);
+    cursor: none;
+}
+
+.intro_name p:hover span {
+    color: #E4236D;
+    transition: all .4s
+}
+
+.intro_social {
+    position: absolute;
+    left: 0;
+    margin: 3% 0;
+    right: 40px;
+}
+
+.intro_social a img {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: -4px;
+    transition: transform .25s ease-in;
+}
+
+.intro_social a {
+    color: #fff;
+    font-size: 24px;
+    padding: 4%;
+    transition: all .4s
+}
+
+.intro_social a:hover {
+    font-size: 26px;
+    color: #E4236D;
+    opacity: 1
+}
+
+.intro_social a img:hover {
+    transform: scale(1.6);
+}
+
+.right_arrow {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    font-size: 40px;
+}
+
+
+/* To have a bigger clickable area around icon */
+
+.right_arrow a:after {
+    content: "";
+    padding: 30px;
+    position: absolute;
+    left: -25px;
+    top: -10px;
+}
+
+.logs {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* margin-top: 0; */
+}
+
+.logs li {
+    color: #fff;
+    padding: 2%;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.logs ul ul li {
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 1%;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.logs i {
+    font-size: 20px;
+}
+
+.logs span {
+    color: #E4236D;
+}
+
+/* For Mobile content */
+
+@media (max-width: 600px) {
+
+    .initials {
+        font-size: 20px;
+    }
+    .intro, .experience {
+        width: 100%
+    }
+    .intro_name, .experience_name {
+        font-size: 16px;
+        letter-spacing: 6px
+    }
+    .intro_social a {
+        font-size: 18px;
+    }
+    .intro_social a>img {
+        width: 25px;
+        height: 25px;
+        bottom: -1px;
+    }
+    .intro_text {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 4px
+    }
+    .logs li {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1px;
+    }
+
+    .logs ul ul li {
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 1px;
+    }
+
+    .logs i {
+        font-size: 14px;
+    }
+}
+
+@font-face {
+    font-family: 'traffolight';
+    src: url('font/traffolight-webfont.woff2') format('woff2'), url('font/traffolight-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
